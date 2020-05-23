@@ -25,7 +25,7 @@ function Cards({data}) {
         <div className={styles.b}>
         <MDBRow>
         
-    <MDBCol className={styles.colo}>
+    <MDBCol className={styles.colo1}>
       <MDBCard className={styles.card3}>
         
         <MDBCardBody>
@@ -40,7 +40,7 @@ function Cards({data}) {
         </MDBCardBody>
       </MDBCard>
     </MDBCol>
-    <MDBCol className={styles.colo}>
+    <MDBCol className={styles.colo2}>
       <MDBCard className={styles.card2}>
         
         <MDBCardBody>
@@ -54,7 +54,7 @@ function Cards({data}) {
         </MDBCardBody>
       </MDBCard>
     </MDBCol>
-    <MDBCol className={styles.colo}>
+    <MDBCol className={styles.colo3}>
       <MDBCard className={styles.card1}>
         
         <MDBCardBody>

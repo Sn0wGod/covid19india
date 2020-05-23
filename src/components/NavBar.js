@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 function NavBar({data}) {
     const classes = useStyles();
     return (
-        <>
+        <div>
             <AppBar position="static" color='secondary' className={`${classes.appbar}`}>
                 <Toolbar>
                     <Typography variant="h5">
@@ -27,7 +27,7 @@ function NavBar({data}) {
             <h5 className={styles.ftwo}>Last Updated :- {new Date(data.datas.lastRefreshed).toDateString()}</h5>
          
            
-        </>
+        </div>
     )
 }
 
