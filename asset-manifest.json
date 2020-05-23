@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/covid19india/static/css/main.e7ea5bfd.chunk.css",
-    "main.js": "/covid19india/static/js/main.3e80fcaf.chunk.js",
-    "main.js.map": "/covid19india/static/js/main.3e80fcaf.chunk.js.map",
+    "main.css": "/covid19india/static/css/main.e4545ceb.chunk.css",
+    "main.js": "/covid19india/static/js/main.457fa3d8.chunk.js",
+    "main.js.map": "/covid19india/static/js/main.457fa3d8.chunk.js.map",
     "runtime-main.js": "/covid19india/static/js/runtime-main.f2fdf7b1.js",
     "runtime-main.js.map": "/covid19india/static/js/runtime-main.f2fdf7b1.js.map",
     "static/css/2.f2c4c274.chunk.css": "/covid19india/static/css/2.f2c4c274.chunk.css",
-    "static/js/2.10f6e791.chunk.js": "/covid19india/static/js/2.10f6e791.chunk.js",
-    "static/js/2.10f6e791.chunk.js.map": "/covid19india/static/js/2.10f6e791.chunk.js.map",
+    "static/js/2.2d80f91d.chunk.js": "/covid19india/static/js/2.2d80f91d.chunk.js",
+    "static/js/2.2d80f91d.chunk.js.map": "/covid19india/static/js/2.2d80f91d.chunk.js.map",
     "index.html": "/covid19india/index.html",
-    "precache-manifest.69bde9f1f405173bfa31a0b80c85b5d1.js": "/covid19india/precache-manifest.69bde9f1f405173bfa31a0b80c85b5d1.js",
+    "precache-manifest.c879efe788c655f02f8886d39e009e1e.js": "/covid19india/precache-manifest.c879efe788c655f02f8886d39e009e1e.js",
     "service-worker.js": "/covid19india/service-worker.js",
     "static/css/2.f2c4c274.chunk.css.map": "/covid19india/static/css/2.f2c4c274.chunk.css.map",
-    "static/css/main.e7ea5bfd.chunk.css.map": "/covid19india/static/css/main.e7ea5bfd.chunk.css.map",
-    "static/js/2.10f6e791.chunk.js.LICENSE.txt": "/covid19india/static/js/2.10f6e791.chunk.js.LICENSE.txt",
+    "static/css/main.e4545ceb.chunk.css.map": "/covid19india/static/css/main.e4545ceb.chunk.css.map",
+    "static/js/2.2d80f91d.chunk.js.LICENSE.txt": "/covid19india/static/js/2.2d80f91d.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/covid19india/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/covid19india/static/media/fa-solid-900.ec763292.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f2fdf7b1.js",
     "static/css/2.f2c4c274.chunk.css",
-    "static/js/2.10f6e791.chunk.js",
-    "static/css/main.e7ea5bfd.chunk.css",
-    "static/js/main.3e80fcaf.chunk.js"
+    "static/js/2.2d80f91d.chunk.js",
+    "static/css/main.e4545ceb.chunk.css",
+    "static/js/main.457fa3d8.chunk.js"
   ]
 }
