@@ -25,31 +25,32 @@ function Cards({data}) {
         <div className={styles.b}>
         <MDBRow>
         
+    
     <MDBCol className={styles.colo1}>
-      <MDBCard className={styles.card3}>
-        
-        <MDBCardBody>
-          
-        <p>Recovery</p>
-          <MDBCardTitle>
-          <CountUp className={styles.fone} start={0} end={data.datas.data.total.recovered} duration={2.75}  />
-          
-          </MDBCardTitle>
-          <img alt="patient" src={patient}></img>
-         
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol className={styles.colo2}>
       <MDBCard className={styles.card2}>
         
         <MDBCardBody>
           
         <p>Infected</p>
           <MDBCardTitle>
-          <CountUp className={styles.fone} start={0} end={data.datas.data.total.confirmed} duration={2.75}  />
+          <CountUp className={styles.fone} start={0} end={data.datas.data.total.confirmed} duration={1.0}  />
           </MDBCardTitle>
           <img alt="sick" src={sick}></img>
+         
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCol>
+    <MDBCol className={styles.colo2}>
+      <MDBCard className={styles.card3}>
+        
+        <MDBCardBody>
+          
+        <p>Recovered</p>
+          <MDBCardTitle>
+          <CountUp className={styles.fone} start={0} end={data.datas.data.total.recovered} duration={1.0}  />
+          
+          </MDBCardTitle>
+          <img alt="patient" src={patient}></img>
          
         </MDBCardBody>
       </MDBCard>
@@ -61,7 +62,7 @@ function Cards({data}) {
           
           <p>Death</p>
           <MDBCardTitle>
-          <CountUp className={styles.fone} start={0} end={data.datas.data.total.deaths} duration={2.75}/>
+          <CountUp className={styles.fone} start={0} end={data.datas.data.total.deaths} duration={1.0}/>
           </MDBCardTitle>
           <img alt="death" src={death}></img>
          
