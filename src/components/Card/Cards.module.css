@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Condensed:ital@1&display=swap');
+.top{
+    margin-bottom: 10px;
+    
+}
+.b{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.card1{
+    background-color: rgb(223, 35, 35);
+    color: white;
+}
+.card2{
+    background-color: rgb(32, 88, 178);
+    color: white;
+}
+.card3{
+    background-color:limegreen;
+    color: white;
+}
+.fone{
+    font-family: 'Chelsea Market', cursive;
+}
+@media only screen and (max-width: 770px) {
+    .colo{
+        width: 90px;
+    }
+    .card3{
+        margin-left: 10px;
+    }
+    .card1{
+        margin-right: 10px;
+    }
+    .card3{
+        padding: 0;
+    }
+    .b{
+        margin: 0;
+    }
+  }
