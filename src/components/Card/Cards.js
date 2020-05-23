@@ -99,7 +99,7 @@ function Cards({data}) {
       <MDBTableBody>
       {
         data.datas.data.statewise.map((res,index)=>
-        res.state.toLowerCase().includes(filter) && 
+        res.state.toLowerCase().includes(filter.toLowerCase()) && 
         (
           <tr key={index}>
             <td className={styles.fone}>{res.state}</td>
