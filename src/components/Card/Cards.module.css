@@ -23,6 +23,7 @@
 .fone{
     font-family: 'Chelsea Market', cursive;
 }
+
 @media only screen and (max-width: 770px) {
     .colo1{
         width: 100px;
@@ -43,5 +44,10 @@
 
     .b{
         margin: 0;
+    }
+    .cen{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
     }
   }

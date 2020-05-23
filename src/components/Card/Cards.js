@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Cards.module.css'
 import { MDBRow , MDBCard, MDBCardBody, MDBCardTitle, MDBCol} from 'mdbreact';
 import death from './death.png'
 import sick from './sick.png'
 import patient from './patient.png'
-import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
+import { MDBTable, MDBTableBody, MDBTableHead ,MDBFormInline, MDBIcon} from 'mdbreact';
 import CountUp from 'react-countup';
 
 
@@ -12,6 +12,11 @@ import CountUp from 'react-countup';
 
 
 function Cards({data}) {
+  const [filter,setFilter] = useState('')
+
+  const changeFilter= (e)=>{
+    setFilter(e.target.value)
+  }
     
     if(data.loading)
     {
@@ -71,6 +76,16 @@ function Cards({data}) {
     </MDBCol>
         </MDBRow>
         <br></br><br/>
+        <MDBRow>
+        <MDBCol md="4"></MDBCol>
+                <MDBCol md="4" className={styles.cen}>
+                  <MDBFormInline className="md-form">
+                    <MDBIcon icon="search" />
+                    <input value={filter} onChange={changeFilter} className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search" />
+                  </MDBFormInline>
+                </MDBCol>
+           <MDBCol md="4"></MDBCol>    
+        </MDBRow>
         <div className="container">
             <MDBTable striped bordered responsive>
       <MDBTableHead>
@@ -83,7 +98,9 @@ function Cards({data}) {
       </MDBTableHead>
       <MDBTableBody>
       {
-        data.datas.data.statewise.map((res,index)=>(
+        data.datas.data.statewise.map((res,index)=>
+        res.state.toLowerCase().includes(filter) && 
+        (
           <tr key={index}>
             <td className={styles.fone}>{res.state}</td>
             <td className={styles.fone}>{res.confirmed}</td>
