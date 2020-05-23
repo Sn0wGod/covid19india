@@ -23,6 +23,9 @@
 .fone{
     font-family: 'Chelsea Market', cursive;
 }
+.black1{
+    background-color: #121212;
+}
 
 @media only screen and (max-width: 770px) {
     .colo1{

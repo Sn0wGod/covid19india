@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Cards.module.css'
-import { MDBRow , MDBCard, MDBCardBody, MDBCardTitle, MDBCol} from 'mdbreact';
+import { MDBRow , MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBFooter,MDBContainer} from 'mdbreact';
 import death from './death.png'
 import sick from './sick.png'
 import patient from './patient.png'
@@ -27,6 +27,7 @@ function Cards({data}) {
       )
     }
     return (
+      <>
         <div className={styles.b}>
         <MDBRow>
         
@@ -114,7 +115,16 @@ function Cards({data}) {
     </MDBTable>
     
         </div>
+
         </div>
+        <MDBFooter className={styles.black1}>
+        <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright: Made by YOGESH & SHAILESH
+        </MDBContainer>
+      </div>
+      </MDBFooter>
+      </>
     )
 }
 
