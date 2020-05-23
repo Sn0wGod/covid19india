@@ -33,7 +33,7 @@ function Cards({data}) {
           
         <p>Infected</p>
           <MDBCardTitle>
-          <CountUp className={styles.fone} start={0} end={data.datas.data.total.confirmed} duration={1.0}  />
+          <CountUp className={styles.fone} start={0} end={data.datas.data.total.confirmed} duration={0.5}  />
           </MDBCardTitle>
           <img alt="sick" src={sick}></img>
          
@@ -45,9 +45,9 @@ function Cards({data}) {
         
         <MDBCardBody>
           
-        <p>Recovered</p>
+        <p>Recovery</p>
           <MDBCardTitle>
-          <CountUp className={styles.fone} start={0} end={data.datas.data.total.recovered} duration={1.0}  />
+          <CountUp className={styles.fone} start={0} end={data.datas.data.total.recovered} duration={0.5}  />
           
           </MDBCardTitle>
           <img alt="patient" src={patient}></img>
@@ -62,7 +62,7 @@ function Cards({data}) {
           
           <p>Death</p>
           <MDBCardTitle>
-          <CountUp className={styles.fone} start={0} end={data.datas.data.total.deaths} duration={1.0}/>
+          <CountUp className={styles.fone} start={0} end={data.datas.data.total.deaths} duration={0.5}/>
           </MDBCardTitle>
           <img alt="death" src={death}></img>
          
