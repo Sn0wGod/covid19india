@@ -29,14 +29,14 @@ var urlsToCache=[
   '/static/js/2.ce97c6ba.chunk.js',
   '/static/js/main.4667ddb1.chunk.js',
   '/static/js/runtime-main.f2fdf7b1.js',
-  'https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise'
+  'https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise',
 ];
 
 self.addEventListener('install',event=>{
   event.waitUntil(
     caches.open(CACHE_NAME)
     .then(cache=>{
-      return cache.addAll(urlsToCache);
+       cache.addAll(urlsToCache);
     })
   )
 })
