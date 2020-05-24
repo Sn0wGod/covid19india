@@ -17,59 +17,6 @@ importScripts(
   "/covid19india/precache-manifest.553ac980a4509580101451d698fa3a33.js"
 );
 
-
-var CACHE_NAME='covid-cache';
-var urlsToCache=[
-  '/',
-  '/favicon.ico',
-  '/asset-manifest.json',
-  '/manifest.json',
-  '/service-worker.js',
-  '/index.html',
-  '/static/js/2.ce97c6ba.chunk.js',
-  '/static/js/main.4667ddb1.chunk.js',
-  '/static/js/runtime-main.f2fdf7b1.js',
-  'https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise'
-];
-
-self.addEventListener('install',event=>{
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-    .then(cache=>{
-      return cache.addAll(urlsToCache);
-    })
-  )
-})
-
-self.addEventListener('activate',function(event){
-  event.waitUntil(
-    caches.keys().then(function(cacheNames){
-      return Promise.all(
-        cacheNames.filter(function(cacheName){
-
-        }).map(function(cacheName){
-          return caches.delete(cacheName);
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch',event=>{
-  event.respondWith(
-    caches.match(event.request)
-    .then(function(response){
-      if(response){
-        return response;
-      }
-      return fetch(event.request);
-    })
-  );
-});
-
-
-
-
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
