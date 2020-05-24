@@ -26,6 +26,10 @@
 .black1{
     background-color: #121212;
 }
+.ftwo{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+}
 
 @media only screen and (max-width: 770px) {
     .colo1{

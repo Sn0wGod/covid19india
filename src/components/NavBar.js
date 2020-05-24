@@ -24,7 +24,7 @@ function NavBar({data}) {
                     </Typography>
                 </Toolbar>
             </AppBar>
-            <h5 className={styles.ftwo}>Last Updated :- {new Date(data.datas.lastRefreshed).toDateString()}</h5>
+            
          
            
         </div>

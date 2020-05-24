@@ -28,6 +28,7 @@ function Cards({data}) {
     }
     return (
       <>
+      <h5 className={styles.ftwo}>Last Updated :- {new Date(data.datas.lastRefreshed).toDateString()}</h5>
         <div className={styles.b}>
         <MDBRow>
         
