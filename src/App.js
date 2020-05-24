@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Cards from './components/Card/Cards';
 import axios from 'axios'
+{/*import { Switch, Link, Route } from 'react-router-dom';*/}
 
 function App() {
 
@@ -33,9 +34,17 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar data={data}/>
-      <Cards data={data}/>
+   {/*} <Link to="/">home</Link>
+    <Link to="/card">card</Link>
+    <Switch>
+      <Route exact path="/" component={NavBar}></Route>
+      <Route path="/card" component={()=><Cards data={data}/>}></Route>
       
+      
+    </Switch>   */}
+    <NavBar/>
+    <Cards data={data}/>
+    
     </div>
   );
 }
