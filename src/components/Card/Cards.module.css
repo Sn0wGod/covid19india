@@ -34,18 +34,18 @@
 @media only screen and (max-width: 770px) {
     .colo1{
         width:200px;
-        margin-left: 20px;
+        margin-left: 17px;
         padding: 0;
     }
     .colo2{
         width: 90px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
         padding: 0;
     }
     .colo3{
         width: 100px;
-        margin-right: 20px;
+        margin-right: 17px;
         padding: 0;
     }
 
